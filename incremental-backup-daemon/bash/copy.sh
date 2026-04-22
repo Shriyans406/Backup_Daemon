@@ -4,7 +4,7 @@ INPUT_FILE="../storage/temp/changed_files.txt"
 BACKUP_ROOT="../storage/backups"
 
 # Generate timestamp
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+TIMESTAMP=$(cat ../storage/temp/timestamp.txt)
 DEST="$BACKUP_ROOT/$TIMESTAMP"
 
 mkdir -p "$DEST"
