@@ -1,0 +1,10 @@
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell.json
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/dep-lib-once_cell
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/dep-lib-libc
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build.json
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/invoked.timestamp
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/dep-build-script-build-script-build
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/invoked.timestamp
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/lib-libc
+/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build

@@ -1,4 +1,473 @@
 {
-    "timestamp": "",
-    "files": {}
+  "timestamp": "1776864771",
+  "files": {
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell.json",
+      "size": 530,
+      "mtime": 1771351123,
+      "hash": "ac9eba63a452667f5da7b3c24dbb64dcd4f4b84929a93ee845dd76411b44eb0e"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/dep-lib-getrandom": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/dep-lib-getrandom",
+      "size": 14,
+      "mtime": 1771351126,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/ui.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/ui.rs",
+      "size": 1709,
+      "mtime": 1771350814,
+      "hash": "038e2ec67502bf9302e66ef58f09570e916128e2c389f8a60e1bd8c445c61dc1"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/lib-unicode_width": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/lib-unicode_width",
+      "size": 16,
+      "mtime": 1771351127,
+      "hash": "9e0094de9da7175d9dcf6709924de457bbf21b3ebee6072f3cc23f1d43b40df1"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351134,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/dep-lib-anstyle": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/dep-lib-anstyle",
+      "size": 14,
+      "mtime": 1771351123,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/lib-clap_derive": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/lib-clap_derive",
+      "size": 16,
+      "mtime": 1771351139,
+      "hash": "902f819fc09f8656f1f0c8c25696734d5579a9ed64a889cac91f598eda025be4"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351138,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/error.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/error.rs",
+      "size": 649,
+      "mtime": 1770549248,
+      "hash": "f0c61864c4e2293246f62ab26041e6b998b3ceee9c2605c89f955566c767db27"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/dep-lib-linux_raw_sys": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/dep-lib-linux_raw_sys",
+      "size": 14,
+      "mtime": 1771351122,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/dep-lib-once_cell": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/dep-lib-once_cell",
+      "size": 14,
+      "mtime": 1771351122,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/dep-lib-rustix": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/dep-lib-rustix",
+      "size": 14,
+      "mtime": 1771351125,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/lib-thiserror_impl": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/lib-thiserror_impl",
+      "size": 16,
+      "mtime": 1771351138,
+      "hash": "fad965d9e3a66c21d2b2a406a656f7b8d674eee1c5a6b34252d9c5154a847c98"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/lib-dialoguer": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/lib-dialoguer",
+      "size": 16,
+      "mtime": 1771351140,
+      "hash": "de73cfddd50174fa537a6f8cb895737afc106b47b02f80e8931a29d1998c4e30"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351121,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/build-script-build-script-build.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/build-script-build-script-build.json",
+      "size": 419,
+      "mtime": 1771351121,
+      "hash": "090f35efcea5b2dc07c452c63810cf5fbb319f5c1c5cdd4534480e028808b598"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351138,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/demo.txt": {
+      "path": "/home/vboxuser/dev/rust/gitx/demo.txt",
+      "size": 5,
+      "mtime": 1770551639,
+      "hash": "f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351134,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/build-script-build-script-build",
+      "size": 16,
+      "mtime": 1771351122,
+      "hash": "393b21ce4d095aae6f010542c05a8176e20d00d30ed7f1f85a4f892379efd902"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/lib-proc_macro2": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/lib-proc_macro2",
+      "size": 16,
+      "mtime": 1771351125,
+      "hash": "41980c8e18902374c30611aafd0920ef6c413824c8d8cfed39f42ccf483e1006"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/lib-anstyle.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/lib-anstyle.json",
+      "size": 388,
+      "mtime": 1771351124,
+      "hash": "7d46d22c6fcb70e9e3a7f2ee830b0400644b0835433b25b56923861cbde501a8"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/main.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/main.rs",
+      "size": 3044,
+      "mtime": 1771351235,
+      "hash": "48ff89efc6ca168539328b8535783850e9084495e4d0afe86fdf1123118715a1"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/dep-lib-thiserror": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/dep-lib-thiserror",
+      "size": 14,
+      "mtime": 1771351138,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/dep-lib-thiserror_impl": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/dep-lib-thiserror_impl",
+      "size": 14,
+      "mtime": 1771351134,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/lib-getrandom": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/lib-getrandom",
+      "size": 16,
+      "mtime": 1771351127,
+      "hash": "e688498bccee80ac870bb08dafcb384484c6582200a89525eb18c8b4f6925eae"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/lib-once_cell",
+      "size": 16,
+      "mtime": 1771351123,
+      "hash": "ace3e687e19eff2935a7a57f1652ef9e505c7b61f7715774d7d0937baf86072d"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/build-script-build-script-build.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/build-script-build-script-build.json",
+      "size": 389,
+      "mtime": 1771351122,
+      "hash": "d7a032bd42f23a6a975fb6e39925db0159781c1af82277afc5a5ce1d067aadb6"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/dep-lib-unicode_width": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/dep-lib-unicode_width",
+      "size": 14,
+      "mtime": 1771351126,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351123,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/dep-lib-shell_words": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/dep-lib-shell_words",
+      "size": 14,
+      "mtime": 1771351128,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/dep-lib-libc": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/dep-lib-libc",
+      "size": 14,
+      "mtime": 1771351122,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/build-script-build-script-build",
+      "size": 16,
+      "mtime": 1771351121,
+      "hash": "c8c0c67236dfec8e793ad0254d8d5319670c6181bb4929b341c4520012179644"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/dep-lib-cfg_if": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/dep-lib-cfg_if",
+      "size": 14,
+      "mtime": 1771351124,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build.json",
+      "size": 368,
+      "mtime": 1771351124,
+      "hash": "ac47be85bb4babefe64e0aa6c46d36fcf5d815b58b134bb3904710502097bf5e"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/lib-unicode_width.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/lib-unicode_width.json",
+      "size": 453,
+      "mtime": 1771351127,
+      "hash": "002b9337eedb35dcc50a53245236f20a88a6790ca517a1ff6f7fc246937fd92c"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/lib-rustix.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/lib-rustix.json",
+      "size": 1054,
+      "mtime": 1771351132,
+      "hash": "544331f77ab7030ff511493999daceae92f82367201bbbcedc4e65161ae226e0"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/lib-cfg_if": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/lib-cfg_if",
+      "size": 16,
+      "mtime": 1771351125,
+      "hash": "652654a9a8144640f38380981c186c4cb6bfaf5954b90faeb969dec3b4367480"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/lib-anstyle": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/anstyle-2a76c6a5e5398037/lib-anstyle",
+      "size": 16,
+      "mtime": 1771351124,
+      "hash": "be0f1b9f0ad19869c0455fa34c56e4fe6e4062f96fc1acb3a472b64635d306bc"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/lib-shell_words": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/lib-shell_words",
+      "size": 16,
+      "mtime": 1771351129,
+      "hash": "a078626af08f1711e7a5b3fdf852ba8c2c02de82910230f5b0abe75ffbc45cb2"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/unicode-width-63d235428d9da8a3/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351126,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351125,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/lib-thiserror_impl.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-impl-1bd30d3d8c613b40/lib-thiserror_impl.json",
+      "size": 532,
+      "mtime": 1771351138,
+      "hash": "03c8be4b0c42025168fcbc18feff295249456f358060f9542a849fc97d058cee"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/lib-rustix": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/rustix-87d808620eedbf5f/lib-rustix",
+      "size": 16,
+      "mtime": 1771351132,
+      "hash": "042cd8dd085495f5c317c5a177115bb28eea103bb13865143c2f5598734cafec"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/once_cell-ceeedbc3e1cff487/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351122,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/dep-build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/dep-build-script-build-script-build",
+      "size": 14,
+      "mtime": 1771351123,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/dep-lib-dialoguer": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/dep-lib-dialoguer",
+      "size": 14,
+      "mtime": 1771351138,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/CACHEDIR.TAG": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/CACHEDIR.TAG",
+      "size": 177,
+      "mtime": 1771351118,
+      "hash": "6d9d1d216e0f83abc5e5662ca62c92b4f23009466b54fa27321a69acdb778bb2"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351118,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351124,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351123,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/lib-libc": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/libc-c262a4461d80f3f4/lib-libc",
+      "size": 16,
+      "mtime": 1771351126,
+      "hash": "b664875118e7a7ce5d2e426b0cc4d02d1f383f0f613c95c88798302e9f62d3a7"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/dep-lib-clap_derive": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/dep-lib-clap_derive",
+      "size": 14,
+      "mtime": 1771351134,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/lib-linux_raw_sys": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/lib-linux_raw_sys",
+      "size": 16,
+      "mtime": 1771351124,
+      "hash": "c021cca2dd058cdfe6fbf4e4ca70ed480e54dbb736d6a14547150b6d19c47211"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/commit.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/commit.rs",
+      "size": 1266,
+      "mtime": 1770551398,
+      "hash": "23685e53fe9fd4fd8e20bfb796ae125ea00dfc1fb0e47d22f2c379c108ecfb61"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/lib-cfg_if.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/cfg-if-a3662b74b62b86e1/lib-cfg_if.json",
+      "size": 377,
+      "mtime": 1771351125,
+      "hash": "99675f8773bdae4572e93b69ee2b3dc4ad7af5312e31cb3f9fdad690fa2228d5"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/lib-getrandom.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/lib-getrandom.json",
+      "size": 553,
+      "mtime": 1771351127,
+      "hash": "1fb7e30d4dbcc88f49935f59e9e20389398ff549c29d21c2b043045cfa31677e"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/lib-thiserror": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/lib-thiserror",
+      "size": 16,
+      "mtime": 1771351138,
+      "hash": "676942c37d36f603d535001b95368d8411d23102e3ca6402b55e03ddd504cb67"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-399fd939b02decd9/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351126,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/lib-dialoguer.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/dialoguer-b35ffff7a9f07b6d/lib-dialoguer.json",
+      "size": 846,
+      "mtime": 1771351140,
+      "hash": "20c1c2ee4ce8a203ea1ecc5818eb96574926a03f6bcb3d01c5865f857f1e6ba0"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/branch.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/branch.rs",
+      "size": 1292,
+      "mtime": 1770728932,
+      "hash": "8e6ea7e5d5d4fe2ff1f89293cf0a9b2ae0f37e81dd005f2100e6494bcce5f00f"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/git.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/git.rs",
+      "size": 1118,
+      "mtime": 1771350348,
+      "hash": "f3f1fd6e296eb8d9e3a6dddfc8b6f56e93aefaa073a357d40832b039e7c67f3f"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/lib-shell_words.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/lib-shell_words.json",
+      "size": 396,
+      "mtime": 1771351129,
+      "hash": "fb62e985d17de5138d22a8643bec91bc82a6447eceba4b7919e1b75f42b78db9"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/lib-clap_derive.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/clap_derive-148e2d5f101a866d/lib-clap_derive.json",
+      "size": 690,
+      "mtime": 1771351139,
+      "hash": "bc3f553630cac8e83f2e4ba1c972a35e621b587deafe643aa814ad5fe645d2a4"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/remote.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/remote.rs",
+      "size": 1312,
+      "mtime": 1771351095,
+      "hash": "1b0b0881494e342b4ca31a0221654282e9fb7a9108321a386e06a5712ab4c685"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/lib-linux_raw_sys.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/lib-linux_raw_sys.json",
+      "size": 763,
+      "mtime": 1771351124,
+      "hash": "cba3316a4d882ea7e137a8b8ba93be0d860f9cee0a6552fa552df7398f03740c"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/lib-proc_macro2.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/lib-proc_macro2.json",
+      "size": 575,
+      "mtime": 1771351125,
+      "hash": "5f20fe3fccf278914bd021fb3bdad667b409b46ce7f6c004f651f7b4a6cd0308"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/cli.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/cli.rs",
+      "size": 598,
+      "mtime": 1770908665,
+      "hash": "5b5e964c0d3e02fd1152dad463c221ea9bb2b88a45300d2900b98a8dd3e9a9fd"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/analyze.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/analyze.rs",
+      "size": 2392,
+      "mtime": 1770731864,
+      "hash": "f247dd8ede93ae18f3e0a2b74061469099dba590e76638738d7613ccff5b285b"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351122,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/lib-thiserror.json": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-396208376e853898/lib-thiserror.json",
+      "size": 488,
+      "mtime": 1771351138,
+      "hash": "4f46086fc102b45564c88ce1d20cf517ed54f27c1f5849394bbebc028cd882e3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/thiserror-343dbab2c4f05f63/build-script-build-script-build",
+      "size": 16,
+      "mtime": 1771351124,
+      "hash": "51e2382516afe36f0eb760aa1a465f90d6947f8c14e8ba67e78d9ec3f8df9618"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/linux-raw-sys-18e35791fffc015a/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351122,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/src/status.rs": {
+      "path": "/home/vboxuser/dev/rust/gitx/src/status.rs",
+      "size": 295,
+      "mtime": 1770550128,
+      "hash": "c6783fd3203b32b9b1ba57d2471f72ee610275ca3c37802d922a0689252f80af"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/invoked.timestamp": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/shell-words-5bcc3374ab5a7915/invoked.timestamp",
+      "size": 48,
+      "mtime": 1771351128,
+      "hash": "5a109e6643e8d3e88642e3f35e85d2a83e639d07523aa6e99166c48178e965c3"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/dep-build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/quote-90ef78e62867bf4b/dep-build-script-build-script-build",
+      "size": 14,
+      "mtime": 1771351118,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/dep-build-script-build-script-build": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/getrandom-cc8697f7e7c92902/dep-build-script-build-script-build",
+      "size": 14,
+      "mtime": 1771351121,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    },
+    "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/dep-lib-proc_macro2": {
+      "path": "/home/vboxuser/dev/rust/gitx/target/debug/.fingerprint/proc-macro2-9474f36791825ee6/dep-lib-proc_macro2",
+      "size": 14,
+      "mtime": 1771351122,
+      "hash": "93a4afc37518a1bf7830744017176e1d1946e5df993e47159069839f61fe49ab"
+    }
+  }
 }
