@@ -12,5 +12,16 @@ def run_pipeline():
     print("[PYTHON] Step 3: Copy changed files")
     os.system("bash ../bash/copy.sh")
 
+def run_restore(timestamp, target):
+    print("[PYTHON] Running restore...")
+    os.system(f"bash ../bash/restore.sh {timestamp} {target}")
+
 if __name__ == "__main__":
-    run_pipeline()
+    choice = input("Enter 'backup' or 'restore': ")
+
+    if choice == "backup":
+        run_pipeline()
+    elif choice == "restore":
+        ts = input("Enter timestamp: ")
+        target = input("Enter restore directory: ")
+        run_restore(ts, target)
