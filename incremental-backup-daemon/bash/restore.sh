@@ -3,51 +3,37 @@
 TIMESTAMP=$1
 RESTORE_TARGET=$2
 
-INDEX_FILE="storage/index.json"
-
 if [ -z "$TIMESTAMP" ] || [ -z "$RESTORE_TARGET" ]; then
     echo "Usage: restore.sh <timestamp> <target_directory>"
     exit 1
 fi
 
-echo "[RESTORE] Starting FULL reconstruction restore..."
+echo "[RESTORE] Starting restore using objects..."
 
-mkdir -p "$RESTORE_TARGET"
+SNAPSHOT_FILE="storage/snapshots/$TIMESTAMP.json"
 
-# Extract all timestamps in order
-ALL_TIMESTAMPS=$(grep '"timestamp"' "$INDEX_FILE" | cut -d '"' -f4)
-
-VALID_TIMESTAMPS=()
-
-# Collect timestamps up to target
-for ts in $ALL_TIMESTAMPS; do
-    VALID_TIMESTAMPS+=("$ts")
-
-    if [ "$ts" == "$TIMESTAMP" ]; then
-        break
-    fi
-done
-
-# Check if timestamp found
-if [[ ! " ${VALID_TIMESTAMPS[@]} " =~ " $TIMESTAMP " ]]; then
-    echo "[RESTORE] ERROR: Timestamp not found in index"
+if [ ! -f "$SNAPSHOT_FILE" ]; then
+    echo "[RESTORE] ERROR: Snapshot not found"
     exit 1
 fi
 
-echo "[RESTORE] Applying backups in order..."
+mkdir -p "$RESTORE_TARGET"
 
-count=0
+echo "[RESTORE] Reading snapshot: $SNAPSHOT_FILE"
 
-for ts in "${VALID_TIMESTAMPS[@]}"; do
-    BACKUP_PATH="storage/backups/$ts"
+# Read JSON and extract file path + hash
+jq -r '.files | to_entries[] | "\(.key)|\(.value.hash)"' "$SNAPSHOT_FILE" | \
+while IFS='|' read -r path hash; do
 
-    if [ -d "$BACKUP_PATH" ]; then
-        echo "[RESTORE] Applying backup: $ts"
+    src="storage/objects/$hash"
+    dest="$RESTORE_TARGET$path"
 
-        cp -r "$BACKUP_PATH"/* "$RESTORE_TARGET" 2>/dev/null
+    # Create folder structure
+    mkdir -p "$(dirname "$dest")"
 
-        ((count++))
-    fi
+    # Copy file
+    cp "$src" "$dest" 2>/dev/null
+
 done
 
-echo "[RESTORE] Reconstruction complete using $count backup layers"
+echo "[RESTORE] Restore completed successfully"

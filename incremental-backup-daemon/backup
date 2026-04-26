@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ "$1" == "backup" ]; then
+    echo "[CLI] Running backup..."
+    cd python
+    python orchestrator.py
+    cd ..
+
+elif [ "$1" == "restore" ]; then
+    TIMESTAMP=$2
+    TARGET=$3
+
+    if [ -z "$TIMESTAMP" ] || [ -z "$TARGET" ]; then
+        echo "Usage: ./backup restore <timestamp> <target_directory>"
+        exit 1
+    fi
+
+    echo "[CLI] Running restore..."
+    bash bash/restore.sh "$TIMESTAMP" "$TARGET"
+
+elif [ "$1" == "status" ]; then
+    echo "[CLI] Showing backup history..."
+    cat storage/index.json
+
+else
+    echo "Usage:"
+    echo "  ./backup backup"
+    echo "  ./backup restore <timestamp> <target>"
+    echo "  ./backup status"
+fi

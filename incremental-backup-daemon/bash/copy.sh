@@ -1,38 +1,39 @@
 #!/bin/bash
 
 INPUT_FILE="../storage/temp/changed_files.txt"
-BACKUP_ROOT="../storage/backups"
+OBJECTS_DIR="../storage/objects"
 
-# Generate timestamp
-TIMESTAMP=$(cat ../storage/temp/timestamp.txt)
-DEST="$BACKUP_ROOT/$TIMESTAMP"
+mkdir -p "$OBJECTS_DIR"
 
-mkdir -p "$DEST"
-
-echo "[COPY] Starting backup to $DEST"
+echo "[COPY] Using deduplicated storage..."
 
 count=0
+saved=0
 
 while IFS= read -r file; do
 
-    # Skip empty lines
     [ -z "$file" ] && continue
 
-    # Create destination path
-    dest_path="$DEST$file"
+    # Generate hash again (same as scan)
+    hash=$(sha256sum "$file" | awk '{print $1}')
 
-    # Create directory structure
-    mkdir -p "$(dirname "$dest_path")"
+    dest="$OBJECTS_DIR/$hash"
 
-    # Copy file
-    cp "$file" "$dest_path" 2>/dev/null
+    # If file already exists, skip copy
+    if [ -f "$dest" ]; then
+        ((count++))
+        continue
+    fi
+
+    cp "$file" "$dest" 2>/dev/null
 
     ((count++))
+    ((saved++))
 
     if ((count % 50 == 0)); then
-        echo "[COPY] Copied $count files..."
+        echo "[COPY] Processed $count files..."
     fi
 
 done < "$INPUT_FILE"
 
-echo "[COPY] Backup completed. Total files: $count"
+echo "[COPY] Done. Stored: $saved new files, skipped duplicates."
